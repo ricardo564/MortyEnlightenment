@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { useRickAndMortyStore } from '~/stores/rickAndMortyStore'
+import { useCharactersStore } from '~/stores/characters'
 
-const charactersStore = useRickAndMortyStore()
+const charactersStore = useCharactersStore()
 const characters = storeToRefs(charactersStore).characters
-const { getCharacters } = useRickAndMortyStore()
+const { getCharacters } = useCharactersStore()
 
 const handleFetchCharacters = async () => {
   await getCharacters()
