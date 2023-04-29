@@ -7,6 +7,9 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
     '@vueuse/nuxt'
   ],
+  plugins: [
+    '~/plugins/api.ts'
+  ],
   extends: [
     'nuxt-seo-kit'
   ],
