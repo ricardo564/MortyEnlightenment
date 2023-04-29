@@ -1,6 +1,6 @@
 <template>
   <div>
     <SeoKit />
-    <NuxtWelcome />
+    <NuxtPage />
   </div>
 </template>
