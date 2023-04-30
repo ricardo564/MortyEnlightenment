@@ -19,11 +19,13 @@ handleFetchCharacters()
       class="h-auto mx-auto w-full flex flex-col px-4 pt-4 lg:px-8"
     >
       <h1>Index</h1>
-      <ul v-if="characters.length">
-        <li v-for="character in characters" :key="character.id">
-          {{ character.name }}
-        </li>
-      </ul>
+      <div class="flex gap-4 flex-wrap justify-around pb-32">
+        <CharacterCard
+          v-for="character in characters"
+          :key="character.id"
+          :character="character"
+        />
+      </div>
     </div>
   </NuxtLayout>
 </template>
