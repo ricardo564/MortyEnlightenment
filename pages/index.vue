@@ -18,7 +18,9 @@ handleFetchCharacters()
     <div
       class="h-auto mx-auto w-full flex flex-col px-4 pt-4 lg:px-8"
     >
-      <h1>Index</h1>
+      <div class="flex w-full justify-center">
+        <h1>MortyEnlightenment</h1>
+      </div>
       <div class="flex gap-4 flex-wrap justify-around pb-32">
         <CharacterCard
           v-for="character in characters"
